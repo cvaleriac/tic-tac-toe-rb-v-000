@@ -16,6 +16,7 @@ end
 
 def move (board, index, value)
   board[index.to_i] = value
+  value = current_player(board)
 end
 
 def position_taken?(board, index)
