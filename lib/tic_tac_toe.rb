@@ -16,7 +16,6 @@ end
 
 def move (board, index, value)
   board[index.to_i] = value
-  value = current_player(board)
 end
 
 def position_taken?(board, index)
@@ -61,6 +60,7 @@ def turn (board)
 
  def current_player(board)
    turn_count(board).even? ? "X" : "O"
+   value = current_player
  end
 
  def won?(board)
