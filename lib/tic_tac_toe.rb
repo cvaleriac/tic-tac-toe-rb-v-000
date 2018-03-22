@@ -89,7 +89,7 @@ def turn (board)
   end
  end
  def play(board)
-   until over?(board) == true
+   until !over?(board) == true
      turn(board)
    end
    if won?(board) == true
