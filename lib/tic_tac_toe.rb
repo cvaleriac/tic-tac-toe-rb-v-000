@@ -15,6 +15,7 @@ def input_to_index (index)
 end
 
 def move (board, index, value)
+  board[index.to_i] = value
   value = current_player(board)
 end
 
