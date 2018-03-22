@@ -87,3 +87,13 @@ def turn (board)
     winner = board[won?(board)[0]]
   end
  end
+ def play(board)
+   until over?(board) == true || won?(board) == false
+     turn(board)
+   end
+   if won?(board) == true
+    puts "Congratulations #{winner(board)}!"
+  else draw?(board) == true
+    puts "Cat's Game!"
+   end
+ end
